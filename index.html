@@ -14,6 +14,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/main.min.css">
     </head>
+
     <body>
         
         <!-- Header -->
@@ -55,6 +56,53 @@
                                 </svg>+38 096 111 11 11</a>
                         </li>
                     </ul>
+
+                    <button class="nav-menu__button" type="button" data-menu-open>
+                        <svg class="nav-menu__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
+                            <use href="./images/symbol-defs.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile-menu -->
+
+                    <div class="navigation-menu navigation-menu--is-hidden" data-menu>
+                    
+                        <ul class="navigation-menu__list">
+                            <li class="navigation-menu__item">
+                                <a href="./index.html" class="navigation-menu__link navigation-menu__link--current">Студия</a>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <a href="./portfolio.html" class="navigation-menu__link">Портфолио</a>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <a href="" class="navigation-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    
+                        <ul class="navigation-contacts">
+                            <li class="navigation-contacts__item">
+                                <a href="tel:+380961111111" class="navigation-contacts__phone">+38 096 111 11 11</a>
+                            </li>
+                            <li class="navigation-contacts__item">
+                                <a href="mailto:info@devstudio.com" class="navigation-contacts__mail">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    
+                        <ul class="social-accounts">
+                            <li class="social-accounts__item"><a href="https://www.instagram.com/" class="social-accounts__link">Instagram</a></li>
+                            <li class="social-accounts__item"><a href="https://twitter.com/" class="social-accounts__link">Twitter</a></li>
+                            <li class="social-accounts__item"><a href="https://www.facebook.com/" class="social-accounts__link">Facebook</a></li>
+                            <li class="social-accounts__item"><a href="https://www.linkedin.com/" class="social-accounts__link">LinkedIn</a></li>
+                        </ul>
+                    
+                        <button type="button" class="navigation-menu__button" data-menu-close>
+                            <svg class="navigation-menu__icon" width="19" height="19" aria-label="Кнопка закрытия мобильного меню">
+                                <use href="./images/symbol-defs.svg#icon-close2"></use>
+                            </svg>
+                        </button>
+                    
+                    </div>
+
                 </nav>
             </div>
         </header>
@@ -186,7 +234,7 @@
                 
             <!-- Work -->
             
-            <section class="section">
+            <section class="section section--hidden">
                 
                 <div class="container">
                     
@@ -195,21 +243,30 @@
                     <ul class="work-list">
                         
                         <li class="work-list__item">                
-                            <img src="./images/box1.jpg" width="370" alt="десктопные решения">
+                            <img 
+                            srcset="./images/work/box1.jpg 1x, ./images/work/box1@2x.jpg 2x"
+                            src="./images/work/box1.jpg"
+                            alt="десктопные решения">
                             <div class="work-list__label">
                                 <h3 class="work-list__text">Десктопные решения</h3>
                             </div>                            
                         </li>
 
                         <li class="work-list__item">                                                                                 
-                            <img src="./images/box2.jpg" width="370" alt="мобильные приложения">
+                            <img 
+                            srcset="./images/work/box2.jpg 1x, ./images/work/box2@2x.jpg 2x"
+                            src="./images/work/box2.jpg"
+                            alt="мобильные приложения">
                             <div class="work-list__label">
                                 <h3 class="work-list__text">Мобильные приложения</h3>
                             </div>                         
                         </li>
 
                         <li class="work-list__item">                           
-                            <img src="./images/box3.jpg" width="370" alt="дизайнерские решения">
+                            <img 
+                            srcset="./images/work/box3.jpg 1x, ./images/work/box3@2x.jpg 2x"
+                            src="./images/box3.jpg"
+                            alt="дизайнерские решения">
                             <div class="work-list__label">
                                 <h3 class="work-list__text">Дизайнерские решения</h3>
                             </div>                     

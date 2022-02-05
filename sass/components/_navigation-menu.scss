@@ -1,0 +1,136 @@
+.navigation-menu {
+  position: absolute;
+  z-index: 2;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 320px) and (max-width: 376px) {
+    padding: 32px 30px;
+  }
+
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__list {
+    margin-bottom: auto;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+
+    &--current {
+      color: $accent-color;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.navigation-contacts {
+  margin-bottom: 64px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+
+    @media screen and (min-width: 320px) and (max-width: 376px) {
+      font-size: 28px;
+    }
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+  }
+}
+
+.social-accounts {
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: end;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 22px;
+        background-color: rgba(33, 33, 33, 0.2);
+        margin-left: 7px;
+        margin-right: 7px;
+
+        @media screen and (min-width: 320px) and (max-width: 376px) {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    @media screen and (min-width: 320px) and (max-width: 376px) {
+      font-size: 14px;
+    }
+  }
+}

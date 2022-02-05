@@ -1,0 +1,23 @@
+.button {
+  min-width: 200px;
+  height: 50px;
+
+  background-color: $accent-color;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  border-radius: 4px;
+  border: none;
+  transition: background-color $cubic $animation, box-shadow $cubic $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $button-color-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

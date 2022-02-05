@@ -1,0 +1,16 @@
+@mixin logo($color) {
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color;
+}
+
+@mixin link($color) {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $color;
+}

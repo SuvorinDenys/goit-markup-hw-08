@@ -11,13 +11,13 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transition: background-color $cubic $animation, box-shadow $cubic $animation;
+  transition: background-color $cubic $animation;
 
   &:hover,
   &:focus {
     background-color: $button-color-hover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }

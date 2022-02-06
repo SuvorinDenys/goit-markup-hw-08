@@ -1,22 +1,85 @@
 .hero {
   background: #2f303a;
+  margin: 0 auto;
+
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   background: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-bckg-img.jpg);
-  max-width: 1600px;
-  max-height: 600px;
-  background-repeat: no-repeat;
+    url(../images/hero/hero-phone.jpg);
   background-size: cover;
-  background-position: center, center;
 
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-phone@2x.jpg);
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-tab.jpg);
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-tab@2x.jpg);
+      background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-desk.jpg);
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-desk@2x.jpg);
+      background-size: cover;
+    }
+  }
+
+  // url(../images/hero-bckg-img.jpg);
+  // max-width: 1600px;
+  // max-height: 600px;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center, center;
+  // margin-left: auto;
+  // margin-right: auto;
 
   &__title {
     max-width: 696px;

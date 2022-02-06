@@ -82,14 +82,20 @@
   // margin-right: auto;
 
   &__title {
-    max-width: 696px;
+    // max-width: 696px;
     margin: 0 auto;
     color: #ffffff;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {

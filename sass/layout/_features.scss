@@ -6,8 +6,7 @@
   }
 
   &__item {
-    max-width: 100%;
-
+    width: 100%;
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
@@ -57,9 +56,3 @@
     letter-spacing: 0.03em;
   }
 }
-
-// .features-list__item {
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
